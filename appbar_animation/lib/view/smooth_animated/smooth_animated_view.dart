@@ -76,7 +76,20 @@ class _SmoothAnimatedViewState extends State<SmoothAnimatedView>
                 ),
                 child: Row(
                   children: [
-                    const SizedBox(width: 16),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 8),
+                      child: InkWell(
+                        onTap: () {
+                          Navigator.pop(context);
+                        },
+                        customBorder: const CircleBorder(),
+                        child: const Padding(
+                          padding: EdgeInsets.all(8.0),
+                          child: Icon(Icons.arrow_back),
+                        ),
+                      ),
+                    ),
+                    const SizedBox(width: 8),
                     Text(
                       "Scrollable App bar",
                       style: Theme.of(context).textTheme.headline6,

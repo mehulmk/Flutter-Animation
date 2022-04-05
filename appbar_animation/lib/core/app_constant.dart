@@ -15,8 +15,13 @@ class AppConstant {
     ),
     AnimationType(
       title: "Smooth Animated Appbar",
-      desc: "Appbar with NotificationListener and AnimationBuilder ",
+      desc: "Appbar with NotificationListener and AnimationBuilder",
       pageRoute: AppPages.smoothAnimatedAppBar,
+    ),
+    AnimationType(
+      title: "Custom Appbar Animation",
+      desc: "Appbar with NotificationListener and AnimationBuilder",
+      pageRoute: AppPages.customAnimatedAppBar,
     ),
   ];
 }
