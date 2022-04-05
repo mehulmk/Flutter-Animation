@@ -2,7 +2,7 @@ import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
 
 class Snap extends StatelessWidget {
-  final ScrollBarsController controller;
+  final AppBarsController controller;
   final Widget child;
 
   const Snap({
@@ -39,8 +39,8 @@ class Snap extends StatelessWidget {
   }
 }
 
-abstract class ScrollBarsController {
-  ScrollBarsController(this.scrollController) {
+abstract class AppBarsController {
+  AppBarsController(this.scrollController) {
     scrollController.addListener(_scrollListener);
   }
 

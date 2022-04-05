@@ -2,8 +2,8 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:appbar_animation/view/common/scroll_app_bar_controller.dart';
 
-class ScrollAppBar extends StatefulWidget with PreferredSizeWidget {
-  ScrollAppBar({
+class AppBarView extends StatefulWidget with PreferredSizeWidget {
+  AppBarView({
     Key? key,
     required this.controller,
     required this.child,
@@ -23,13 +23,13 @@ class ScrollAppBar extends StatefulWidget with PreferredSizeWidget {
   final double height;
 
   @override
-  _ScrollAppBarState createState() => _ScrollAppBarState();
+  _AppBarViewState createState() => _AppBarViewState();
 
   @override
   Size get preferredSize => Size.fromHeight(height);
 }
 
-class _ScrollAppBarState extends State<ScrollAppBar> {
+class _AppBarViewState extends State<AppBarView> {
   late Widget appBar;
 
   @override

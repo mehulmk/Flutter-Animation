@@ -8,5 +8,10 @@ class AppConstant {
       desc: "Animate appbar with ValueNotifier and addListener",
       pageRoute: AppPages.animatedAppBar,
     ),
+    AnimationType(
+      title: "Animated Appbar after scroll",
+      desc: "Animate appbar with ValueNotifier and addListener",
+      pageRoute: AppPages.scrollAnimatedAppBar,
+    ),
   ];
 }

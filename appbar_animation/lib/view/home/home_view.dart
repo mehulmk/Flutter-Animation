@@ -18,7 +18,8 @@ class HomeView extends StatelessWidget {
             margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
             child: InkWell(
               onTap: () {
-                Navigator.pushNamed(context, AppPages.animatedAppBar);
+                Navigator.pushNamed(
+                    context, AppConstant.appBarUseCaseList[index].pageRoute);
               },
               child: Padding(
                 padding: const EdgeInsets.all(12),
