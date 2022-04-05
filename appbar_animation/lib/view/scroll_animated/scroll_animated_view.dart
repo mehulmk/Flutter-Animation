@@ -11,7 +11,9 @@ class ScrollAnimatedView extends StatelessWidget {
     return Scaffold(
       appBar: PreferredSize(
         preferredSize: const Size(0, 0),
-        child: Container(),
+        child: Container(
+          color: Colors.black,
+        ),
       ),
       body: Stack(
         children: [
